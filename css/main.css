@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Mallory MP Bold";
+  text-transform: uppercase;
+  background: #444;
+  background-image: linear-gradient(165deg, rgba(0, 0, 0, 0.5) 3%, rgba(20, 20, 20, 0.5) 100%);
+  color: white;
+}
+
+.countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.countdown__item {
+/*  max-width: 20rem;*/
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  min-width: 31%;
+  margin-bottom: 1rem;
+}
+
+.countdown__item--large {
+  flex: auto;
+  width: 100%;
+  font-size: 2.75em;
+}
+
+.countdown__timer {
+  padding: .25em;
+  background-color: #555;
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 2em;
+  
+}
+
+.countdown__label {
+  font-size: 1em;
+  padding-top: .40em;
+}
+.countdown__item--large .countdown__label:before, .countdown__item--large .countdown__label:after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-image: linear-gradient(left, transparent, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.countdown-extra {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 100rem;
+	margin: 0 auto;
+}
+
+.countdown-extra-heading {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 auto;
+	min-width: 100%;
+	margin-bottom: 1rem;
+}
+
+.countdown-extra-heading-text {
+	flex: auto;
+	width: 100%;
+	font-size: 2.75em;
+}
