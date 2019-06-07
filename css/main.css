@@ -31,22 +31,32 @@ body {
 .countdown__item--large {
   flex: auto;
   width: 100%;
-  font-size: 2.75em;
+  font-size: 1.75em;
 }
 
 .countdown__timer {
   padding: .25em;
   background-color: #555;
-  color: white;
+  font-family: "lcd";
+  color: #0099cc;
   border: 1px solid black;
   border-radius: 3px;
   font-weight: bold;
-  font-size: 2em;
-  
+  font-size: 3.5em;
+  letter-spacing: 0.1em;
+}
+
+.countdown__timer-large {
+	font-size: 5em;
+}
+
+#until {
+	border-top: 2px rgba(255,255,255,0.3) solid;
+	
 }
 
 .countdown__label {
-  font-size: 1em;
+  font-size: 1.5em;
   padding-top: .40em;
 }
 .countdown__item--large .countdown__label:before, .countdown__item--large .countdown__label:after {
